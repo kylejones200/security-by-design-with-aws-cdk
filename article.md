@@ -14,7 +14,7 @@ Security is job zero when building any application. AWS CDK makes it easier for 
 ### Implementing security into CDK projects
 Security must be at the forefront of every resource definition and interaction when working with CDK. AWS CDK enables secure defaults for AWS resources while allowing developers to enforce strict security policies programmatically. This includes enforcing encryption, setting appropriate permissions, using the principle of least privilege, and ensuring that access control is granular and explicit.
 
-**Secure Defaults in CDK Constructs**
+Secure Defaults in CDK Constructs
 
 Many AWS resources have security features that must be configured explicitly by default. AWS CDK provides high-level constructs (L2 constructs) that often come with secure defaults, such as enabling encryption for S3 buckets or enforcing HTTPS-only communication for API Gateway. While these defaults are a good starting point, you can further tighten the security posture by customizing them.
 
@@ -135,7 +135,7 @@ The AWSLambdaBasicExecutionRole allows the Lambda to log to CloudWatch.
 
 We define additional permissions to allow access to a specific S3 bucket (by ARN) and no more.
 
-**Automating Security Groups**
+Automating Security Groups
 
 Security Groups (SGs) are essential for controlling traffic to and from your resources, such as EC2 instances, Lambda functions, or RDS databases. AWS CDK allows you to define security groups programmatically, ensuring that access control is tightly managed.
 
@@ -290,7 +290,7 @@ Logs are stored in a CloudWatch Log Group with a retention period of one month.
 ### Integrating compliance tools
 Compliance with industry standards and regulations is critical for many organizations, particularly in the healthcare, finance, and government sectors. AWS provides tools such as AWS Config, Amazon Macie, and AWS Security Hub to help manage compliance, which can be automated using AWS CDK.
 
-**Using AWS Config for Compliance**
+Using AWS Config for Compliance
 
 AWS Config tracks the configuration of AWS resources and ensures they comply with specified rules. You can define custom compliance rules or use AWS Config's managed rules to ensure that your resources meet security standards, such as that all S3 buckets are encrypted.
 
@@ -362,7 +362,7 @@ In this example, AWS Security Hub is enabled, and findings from various AWS secu
 
 This helps provide a holistic view of your AWS security posture and ensures compliance with best practices.
 
-#### **How to Ensure Your Infrastructure Follows Security Best Practices**
+#### How to Ensure Your Infrastructure Follows Security Best Practices
 Security best practices with AWS CDK include encryption, access control, monitoring, and following the principle of least privilege.
 
 Automating IAM Role Creation and Policies
