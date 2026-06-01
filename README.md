@@ -11,14 +11,7 @@ Security must be at the forefront of every resource definition and interaction w
 
 Many AWS resources have security features that must be configured explicitly by default. AWS CDK provides high-level constructs (L2 constructs) that often come with secure defaults, such as enabling encryption for S3 buckets or enforcing HTTPS-only communication for API Gateway. While these defaults are a good starting point, you can further tighten the security posture by customizing them.
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
